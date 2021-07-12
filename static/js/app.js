@@ -59,6 +59,44 @@ function Bardata(tableData) {
 }
     Plotly.newPlot("bar", trace1, layout);
 }
+//               Question 3
+//  Create a bubble chart that displays each sample.
+
+function Bubbledata(tableData) {
+  var otu_label = tableData.otu_labels
+  var number = tableData.sample_values
+  var otu_id = tableData.otu_ids
+  var sample_values = tableData.sample_values
+  var trace1 = {
+      x: otu_id,
+      y: number,
+      text: otu_label,
+      mode: 'markers',
+      marker: {
+          color: otu_id,
+          size: sample_values,
+          colorscale: "Picnic"
+      }
+  };
+
+  var data = [trace1];
+
+  var layout = {
+      title: 'Bacteria',
+      xaxis: { title: "OTU ID" },
+      margin: {t:30},
+      yaxis: sample_values,
+      showlegend: false,
+      height: 600,
+      width: 1000
+  };
+
+  Plotly.newPlot('bubble', data, layout);
+}
+
+  
+
+
 
 
 
