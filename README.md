@@ -1,5 +1,9 @@
 # belly-button-diversity
 
+https://utsa.bootcampcontent.com/utsa-bootcamp/utsa-san-data-pt-03-2021-u-c/-/raw/master/00_Homework_Assignments_Instructions_Data/12_Week15/Instructions/Images/bacteria.jpg
+
+
+
 **Plot.ly Homework - Belly Button Biodiversity
 
 In this assignment, you will build an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes that colonize human navels.
