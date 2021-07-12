@@ -35,7 +35,9 @@ Create a bubble chart that displays each sample.
 
 
 
-Use otu_ids for the x values.
+Use otu_ids for the x values.https://utsa.bootcampcontent.com/utsa-bootcamp/utsa-san-data-pt-03-2021-u-c/-/raw/master/00_Homework_Assignments_Instructions_Data/12_Week15/Instructions/Images/hw01.png
+
+https://utsa.bootcampcontent.com/utsa-bootcamp/utsa-san-data-pt-03-2021-u-c/-/raw/master/00_Homework_Assignments_Instructions_Data/12_Week15/Instructions/Images/hw01.png
 
 
 
