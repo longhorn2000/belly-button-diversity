@@ -93,6 +93,17 @@ function Bubbledata(tableData) {
 
   Plotly.newPlot('bubble', data, layout);
 }
+// Display each key-value pair from the metadata JSON object somewhere on the page.  
+function showmetadata(tableData) {
+  console.log(tableData)
+  var ul = d3.select("#sample-metadata");
+  ul.html("") //clears out metadata panel data
+  Object.entries(tableData).forEach(([keys, value]) => {
+      ul.append("h5").text(`${keys} : ${value}`)
+      console.log(keys, value)
+  });
+}
+
 
   
 
