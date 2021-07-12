@@ -25,6 +25,9 @@ function init() {
       showmetadata(metadata)
   });
 }
+init()
+// code above will populate below after code is run
+
 
 
 
