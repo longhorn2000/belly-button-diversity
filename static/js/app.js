@@ -28,6 +28,39 @@ function init() {
 init()
 // code above will populate below after code is run
 
+//                question 2 
+
+//Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+function Bardata(tableData) {
+  console.log(tableData);
+  //console.log(tableData.samples[0].otu_labels)
+  console.log(tableData.otu_ids.map(function (otu) {
+      return "OTU " + otu
+  }))
+  var number = tableData.sample_values.slice(0, 10);
+  var slice = tableData.otu_ids.map(function (otu) {
+      return "OTU " + otu
+  }).slice(0, 10)
+  console.log(slice)
+  var otu_label = tableData.otu_labels
+      var trace1 = [{
+      text: otu_label.reverse(),
+      type: 'bar',
+      x: number.reverse(),
+      y: slice.reverse(),
+      orientation: 'h'
+  }];
+  var layout = {
+    title: 'Top 10 OTUs',
+    barmode: 'stack',
+    xaxis: { title: "" },
+    yaxis: { title: "" },
+    width: 800
+}
+    Plotly.newPlot("bar", trace1, layout);
+}
+
+
 
 
 
